@@ -1,0 +1,44 @@
+---
+import ExperienceItem from "./ExperienceItem.astro"
+const EXPERIENCIE = [
+  {
+    date: "Actual Job...",
+    title: "IT Manager",
+    company: "Levare Sistemas de Petroleo Mexicanos",
+    description:
+      "As the inaugural employee for the Mexico facility, I played a pivotal role in the launch of the country's first ESP manufacturing facility. In collaboration with the senior management team, I contributed to integrating cutting-edge technology, marking a significant milestone in the industry. This achievement not only showcases my ability to work in high-stakes environments but also highlights my commitment to innovation and excellence. ",
+    link: "https://levare.com/newsroom/2",
+  },
+  {
+    date: "January 2022",
+    title: "IT Manager",
+    company: "Daehan Mexico",
+    description:
+      "Steering a talented 4-person IT Engineering team, I've led transformative tech initiatives, revolutionizing our operations and setting industry benchmarks. We've deployed a state-of-the-art MES System, designed a robust network, and launched cutting-edge VM servers with VMware, boosting efficiency to new heights. Our digital presence soared with the launch of daehanmexico.com.mx, while our in-house Panasonic Robot Training program has advanced our technical prowess. Implementing full Auto PLC backups ensured unmatched data security. As the creative force behind our captivating company videos, I've not only achieved goals but redefined success, leveraging technology to propel our brand into the future.",
+  },
+  {
+    date: "July 2019",
+    title: "IT Specialist",
+    company: "Donghee Mexico",
+    description:
+      "As the dedicated IT expert for our company, I embrace the thrilling responsibility of maintaining a seamless technological ecosystem. This role involves ensuring the optimal performance of database servers, internal applications, network systems, as well as overseeing CCTV and access control. I handle license management, equipment repairs, and spearhead infrastructure improvements, providing exceptional support to users across Mexico and Korea. By blending cultures through technology, I convert challenges into victories, guaranteeing smooth operations and propelling our team towards unified success with groundbreaking solutions.",
+  },
+  {
+    date: "June 2018",
+    title: "IT Support",
+    company: "RAC Mexico Operaciones",
+    description:
+      "I provide essential IT support across the corporation and nearly 130 stores in Mexico, tackling equipment repairs, desktop, network, and infrastructure issues. Working closely with the US corporate office, I ensure seamless support for internal applications and manage IT equipment to keep our operations running smoothly at all times. My efforts ensure a reliable and efficient technological environment for our entire organization.",
+  },
+]
+---
+
+<ol class="relative mt-16">
+  {
+    EXPERIENCIE.map((experiencie) => (
+      <li class="">
+        <ExperienceItem {...experiencie} />
+      </li>
+    ))
+  }
+</ol>

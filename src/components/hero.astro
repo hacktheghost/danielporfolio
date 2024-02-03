@@ -1,0 +1,61 @@
+---
+import Badge from "./badge.astro"
+import Socialpill from "./socialpill.astro"
+import Gmail from "./Icons/gmail.astro"
+import Linkedin from "./Icons/linkedin.astro"
+import Cv from "./Icons/cv.astro"
+import Github from "./Icons/github.astro"
+
+---
+
+<div class="max-w-xl">
+    <div class="flex gap-4 mb-4">
+        <img
+            class="rounded-full shadow-lg size-16" 
+            src="https://i.imgur.com/e6dLbc1.png" 
+            alt="Pixel Art Daniel Maynez">	
+        <a 
+            href="https://www.linkedin.com/in/daniel-maynez-b143b4153/"
+            rel="noopener"
+            target="_blank"
+            class="flex items-center transition md:justify-center md:hover:scale-105"
+            >
+        </span>
+        <Badge>Hired Actually</Badge></a>
+    </div>
+    <h1 class=" text-4xl font-bold tracking-tight sm:text-5xl">
+        Hey, Im Daniel 👋
+    </h1>
+    <p class="mt-6 text-xl text-gray-800 dark:[&>strong]:text-yellow-200 [&>strong]:text-yellow-500 [&>strong]:font-semibold dark:text-gray-300">
+        With over 10 years of experience, from Nuevo Leon, Mexico 🇲🇽, 
+        <strong>Experienced as IT Administrator, Network Expert, Cloud Services,
+        Virtualization, ERPs, Cybersecurity, and Application Development. </strong> 
+        My expertise lies in empowering businesses to achieve their maximum 
+        potential through technology.
+    </p>
+
+<nav class="flex flex-wrap gap-4 mt-8">
+    <Socialpill href="mailto:danielfloresmaynez@gmail.com">
+        <Gmail class="size-4" />
+        Contact
+    </Socialpill>
+    <Socialpill href="https://www.linkedin.com/in/daniel-maynez-b143b4153/">
+        <Linkedin class="size-4" />
+        LinkedIn
+    </Socialpill>
+    <Socialpill href="https://github.com/hacktheghost">
+        <Github class="size-4" />
+        GitHub
+    </Socialpill>
+
+</nav>
+</div>
+
+<style>
+	h1{
+		color: #FFB347;
+	}
+	h2{
+		color: #40596B;
+	}
+</style>
